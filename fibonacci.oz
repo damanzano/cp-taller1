@@ -18,8 +18,19 @@ end
 declare
 fun {IterativeFib N}
    fun {Fib N A1 A2}
-     if N < 1 then Fib1 else {Fib (N - 1) A2 (A1 + A2)} end
+     if N < 1 then A1 else {Fib (N - 1) A2 (A1 + A2)} end
    end
 in
    {Fib N 1 1}
 end
+
+{Browse {Fib 10}}
+{Browse {Fib 20}}
+{Browse {Fib 50}}
+% La implementación recursiva pura se tarda más de un minuto en calcular la serie para N=50
+
+{Browse {IterativeFib 50+1}}
+{Browse {IterativeFib 50*10}}
+{Browse {IterativeFib 50*100}}
+
+
