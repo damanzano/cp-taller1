@@ -1,0 +1,9 @@
+% David Andrés Mazano Herrera
+% Introducción a la programación por restricciones
+% Tarea 1-Punto 2
+% Comvertir un entero en base decimal a su representación binaria
+% La reprensentación se retorna en forma de lista
+
+declare
+fun{Dec2Bin N}
+end
