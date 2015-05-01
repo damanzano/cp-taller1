@@ -15,6 +15,7 @@ in
    {IterativeDec2Bin N nil}
 end
 
+% Pruebas
 { Browse {Dec2Bin 0}}
 { Browse {Dec2Bin 1}}
 { Browse {Dec2Bin 2}}
